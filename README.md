@@ -11,4 +11,5 @@ This Real Estate Dashboard provides key metrics for a Real Estate Agency or a Pr
 -	What is the price trend by city using a clustered column chart? 
 -	Compare agent performance by showing the average commission percentage, average properties sold, and close rate percentage.
 
--	Dashboard Interaction <a href= “https://github.com/MagnificatStar/Real-Estate-Dashboard-3/blob/main/Real%20Estate%20dashboard%20pic.png”> View Dashboard</a> 
+-	Dashboard Interaction <a href= “https://github.com/MagnificatStar/Real-Estate-Dashboard-3/blob/main/Real%20Estate%20dashboard%20pic.png”> View Dashboard</a>
+-	https://github.com/MagnificatStar/Real-Estate-Dashboard-3/blob/main/Real%20Estate%20dashboard%20pic.png
