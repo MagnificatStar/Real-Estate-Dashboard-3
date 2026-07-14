@@ -9,3 +9,39 @@ Average Properties Per Agent = DIVIDE([Total Properties], DISTINCTCOUNT(real_est
 AvgCommissionPct = AVERAGE(real_estate[CommissionPct])
 
 CloseRatePct = DIVIDE( CALCULATE([Total Properties], 'real_estate'[Status]= "Sold"), [Total Properties], 0)
+
+---- User Defined Function 
+
+
+DEFINE
+FUNCTION FnMoMGrowthPct= (metric:INT64 EXPR) =>
+VAR _CurrentMonth= metric
+VAR _LastMonth = 
+    CALCULATE(
+        metric,
+        DATEADD('Date'[Date], -1,MONTH)
+    )
+    VAR _VarPct = 
+    DIVIDE(
+        (_CurrentMonth - _LastMonth),
+        _LastMonth,
+        0
+    )
+    RETURN 
+    IF(_VarPct > 0, "↗", "↘")
+    & " "
+    &FORMAT(_VarPct, "0%")
+    & " vs last month"
+
+    EVALUATE
+    ROW(
+        "MoM Test Result", FnMoMGrowthPct([Active listings])
+    )
+
+-------After creating the User Defined Function, I create two more measures:
+
+AvgListPrice_MoM% = FnMoMGrowthPct(_Measures[Average List Price])
+
+
+Activelistings_MoM% = FnMoMGrowthPct(_Measures[Active listings])
+
