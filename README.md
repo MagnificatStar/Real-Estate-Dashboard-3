@@ -20,8 +20,7 @@ This Real Estate Dashboard provides key metrics for a Real Estate Agency or a Pr
 -	Designed a dashboard background using PowerPoint
 -	Created a date table for time-intelligence reporting
 -	Applied conditional formatting to highlight key insights
--	Created measures for Key metrics. View Measures</a>
-< a href = “ https://github.com/MagnificatStar/Real-Estate-Dashboard-3/blob/main/Measures%20for%20Real%20Estate%20dash.txt” > 
+-	Created measures for Key metrics. View Measures <a href = “https://github.com/MagnificatStar/Real-Estate-Dashboard-3/blob/main/Measures%20for%20Real%20Estate%20dash.txt” > 
 -	Created reusable measures with User-Defined Functions (UDFs)
 -	Created a datasource parameter for a dynamic and flexible set-up
 
