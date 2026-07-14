@@ -1,0 +1,11 @@
+Total Properties = Total Properties = DISTINCTCOUNT(real_estate[PropertyID])
+
+Average List Price = AVERAGE(real_estate[ListPrice])
+
+Active listings = CALCULATE(DISTINCTCOUNT(real_estate[ListingID]), real_estate[Status]= "Active")
+
+Average Properties Per Agent = DIVIDE([Total Properties], DISTINCTCOUNT(real_estate[AgentID]), 0)
+
+AvgCommissionPct = AVERAGE(real_estate[CommissionPct])
+
+CloseRatePct = DIVIDE( CALCULATE([Total Properties], 'real_estate'[Status]= "Sold"), [Total Properties], 0)

@@ -1,0 +1,11 @@
+Date = 
+ ADDCOLUMNS(
+    CALENDAR(
+        MIN('real_estate'[ListingDate]),
+        MAX('real_estate'[ListingDate])
+    ),
+        "Year", YEAR([Date]),
+        "MonthNumber", MONTH ([Date]),
+        "MonthName", FORMAT([Date],"MMM"),
+        "YearMonth", FORMAT ([Date], "yyyy-MM")
+ )
