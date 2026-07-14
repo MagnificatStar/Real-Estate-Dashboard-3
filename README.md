@@ -13,3 +13,8 @@ This Real Estate Dashboard provides key metrics for a Real Estate Agency or a Pr
 
 -	Dashboard Interaction <a href= “https://github.com/MagnificatStar/Real-Estate-Dashboard-3/blob/main/Real%20Estate%20dashboard%20pic.png”> View Dashboard</a>
 -	https://github.com/MagnificatStar/Real-Estate-Dashboard-3/blob/main/Real%20Estate%20dashboard%20pic.png
+
+
+## Dashboard
+<img width="1481" height="812" alt="Real Estate dashboard pic" src="https://github.com/user-attachments/assets/65f61523-2641-49e9-84b3-02ed517017ca" />
+
